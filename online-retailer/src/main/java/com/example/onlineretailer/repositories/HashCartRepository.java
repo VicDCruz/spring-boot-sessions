@@ -1,5 +1,6 @@
-package com.example.onlineretailer;
+package com.example.onlineretailer.repositories;
 
+import com.example.onlineretailer.repositories.CartRepository;
 import lombok.AllArgsConstructor;
 import lombok.ToString;
 import org.springframework.stereotype.Repository;

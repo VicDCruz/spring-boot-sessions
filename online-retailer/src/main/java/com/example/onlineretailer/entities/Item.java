@@ -1,4 +1,4 @@
-package com.example.onlineretailer;
+package com.example.onlineretailer.entities;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,5 +1,7 @@
 package com.example.onlineretailer;
 
+import com.example.onlineretailer.entities.Item;
+import com.example.onlineretailer.services.CartService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -12,8 +14,9 @@ import java.util.Map;
 public class OnlineRetailerApplication {
 
     public static void main(String[] args) {
-        ConfigurableApplicationContext context = SpringApplication.run(OnlineRetailerApplication.class, args);
-        CartService cartService = context.getBean(CartService.class);
+        SpringApplication.run(OnlineRetailerApplication.class, args);
+//        ConfigurableApplicationContext context = SpringApplication.run(OnlineRetailerApplication.class, args);
+/*        CartService cartService = context.getBean(CartService.class);
         cartService.addToCart(1, 1);
         cartService.addToCart(4, 2);
         cartService.addToCart(3, 3);
@@ -21,9 +24,7 @@ public class OnlineRetailerApplication {
         cartService.addToCart(46, 5); // Doesn't exist
         printCartItems(cartService);
         System.out.printf("Total cost: %.2f\n", cartService.calculateCartCost());
-
-        ResourcesBean resourcesBean = context.getBean(ResourcesBean.class);
-        System.out.println(resourcesBean);
+*/
     }
 
     private static void printCartItems(CartService cartService) {

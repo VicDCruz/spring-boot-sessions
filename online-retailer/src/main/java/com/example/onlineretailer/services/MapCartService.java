@@ -1,5 +1,7 @@
-package com.example.onlineretailer;
+package com.example.onlineretailer.services;
 
+import com.example.onlineretailer.entities.Item;
+import com.example.onlineretailer.repositories.CartRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;

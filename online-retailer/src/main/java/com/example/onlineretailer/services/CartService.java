@@ -1,4 +1,4 @@
-package com.example.onlineretailer;
+package com.example.onlineretailer.services;
 
 import java.util.HashMap;
 
