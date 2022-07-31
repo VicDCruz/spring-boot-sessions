@@ -1,12 +1,16 @@
 package com.example.onlineretailer.entities;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
 
 @Getter
 @Setter
+@ToString
+@NoArgsConstructor
 @Entity(name = "product_suggestion")
 public class ProductSuggestion {
     @Id
