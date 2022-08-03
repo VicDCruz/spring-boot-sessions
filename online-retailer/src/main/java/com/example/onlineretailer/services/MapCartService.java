@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
 import java.util.Map;
 
 @Service
@@ -37,11 +36,11 @@ public class MapCartService implements CartService {
 
     @Override
     public void removeFromCart(int itemId) {
-        this.cart.remove(itemId);
+        if (this.catalog.containsKey(itemId)) this.cart.remove(itemId);
     }
 
     @Override
-    public HashMap<Integer, Integer> getAllItemsInCart() {
+    public Map<Integer, Integer> getAllItemsInCart() {
         return this.cart.getAll();
     }
 

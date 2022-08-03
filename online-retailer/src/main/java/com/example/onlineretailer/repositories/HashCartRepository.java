@@ -2,6 +2,7 @@ package com.example.onlineretailer.repositories;
 
 import com.example.onlineretailer.repositories.CartRepository;
 import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 import org.springframework.stereotype.Repository;
 
@@ -12,6 +13,10 @@ import java.util.HashMap;
 @AllArgsConstructor
 public class HashCartRepository implements CartRepository {
     private HashMap<Integer, Integer> cart;
+
+    public HashCartRepository() {
+        this.cart = new HashMap<>();
+    }
 
     @Override
     public void add(int itemId, int quantity) {
